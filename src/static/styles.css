@@ -89,7 +89,7 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
   padding: 0;
   display: block;
@@ -98,6 +98,7 @@ section h3 {
 .participant-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   margin-bottom: 8px;
   padding: 6px 10px;
@@ -106,6 +107,21 @@ section h3 {
   border-radius: 6px;
   font-size: 14px;
   color: #1a237e;
+}
+
+.delete-btn {
+  margin-left: 12px;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.06);
 }
 
 .participant-avatar {
